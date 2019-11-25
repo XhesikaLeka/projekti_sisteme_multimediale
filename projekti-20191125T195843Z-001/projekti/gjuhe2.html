@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="fq3">
+
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8">
+    <meta name="author" content="sindi xhesi">
+    <meta name="keywords" content="web design, web development, affordable, responsive">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link type="text/css" rel="stylesheet" href="gjuhe2.css">
+    <link rel="icon" href="tabicon.png" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Karla">
+          
+    <script src="projekt.js"></script>
+    <script>
+     
+    </script>
+</head>
+
+<body>
+    <div  id="id01" class="modal">
+        <div  class="modal-content animate">
+            <form id="forma" style="margin-left: 20%; margin-top: 1%; font-size: 1vw"><br>
+                Send us your questions:<br><br>
+              <input type="email" placeholder="Your e-mail" style="width: 70%; border-radius: 10px;" required><br>
+               <textarea  cols="30" rows="5" style="border-radius: 10px; resize: none; margin-top: 3%; width: 70%" placeholder="Type your question here..."></textarea><br>
+               
+             <input   style=" background-color: #2d862d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    width: 20%; height: 30px; margin-left: 15%; margin-bottom: 2%; font-size: 0.8vw; " type="button" onclick="document.getElementById('id01').style.display = 'none'; document.getElementById('forma').reset()" value="Send" onclick="alert('Your question was sent. We will contact you soon.')">
+             <input   style=" background-color: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0px; font-size: 0.8vw;
+    width: 20%; height: 30px; margin-bottom: 2%; " type="button" onclick="document.getElementById('id01').style.display = 'none'" value="Cancel">
+            </form>
+        </div>
+    </div>
+      <div  id="id02" class="modal">
+        <div  class="modal-content2 animate">
+     <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="faqe2.html"><img src="logoja.png" class="log" /></a>
+        <hr class="vija">
+        <button class="buton"><a href="gjuhe2.html" >Introduction</a></button>
+        
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(1);">Three ways to <br>insert CSS</a></button>
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(2);">CSS Syntax</a></button>
+        
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(3);">Colors &amp; Background</a></button>
+        <hr class="vija">
+        <button class="buton"> <a href="#" onclick="leksionet(4);">Text &amp; Font </a></button>
+       
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(5);">Margin, Padding, Height &amp; Width</a></button>
+        
+        <div class="pozfuter">
+            <footer id="futer">Copyright &copy;2019 All rights reserved | <br>Made with &#10084; by <span style="color: darkgoldenrod;">Semicolon</span> </footer>
+        </div>
+
+    </div>
+    <div>
+        <div class="main">
+            <h1 id="titull">
+                Introduction</h1>
+            <hr>
+         <div><span class="jeshile">CSS</span> stands for Cascading Style Sheets
+				<span class="jeshile">CSS</span> describes how <span class="portokalli">HTML</span> elements are to be displayed on screen, paper, or in other media
+				<span class="jeshile">CSS</span> saves a lot of work. It can control the layout of multiple web pages all at once
+				External stylesheets are stored in <span class="jeshile">CSS</span> files
+				<span class="jeshile">CSS</span> is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+				
+				<div class="contain">
+				<img src="shembullcss.jpg" alt="Avatar" class="image" >
+				<div class="overlay">
+					<div class="text"><img src="shembull1css.jpg" class="image1"></div>
+				</div>
+			</div><br>
+				<span class="portokalli">HTML</span> was NEVER intended to contain tags for formatting a web page!
+				Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+				To solve this problem, the <psan class="roz">World Wide Web Consortium</psan> (W3C) created <span class="jeshile">CSS</span>.
+				<span class="jeshile">CSS</span> removed the style formatting from the <span class="portokalli">HTML</span> page!<br><br>
+				<i>(Mouse over the picture to see the difference after implementing CSS.)</i>
+			</div>
+
+
+        </div>
+
+        <div class="main" id="leksion1">
+           <img src="light_e_ndezur.png" id="kuriozitete1" onclick="fik(1)">
+           
+           
+           <div id="kurioz1">
+           <span  id="close1" title="Close" onclick="mbyll(1)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+          <p id="k1">The “px” unit in CSS doesn’t really have anything to do with screen pixels, despite the poorly chosen name.</p>
+          
+      </div>
+          <div class="icons">
+           <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'" >
+           <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+           </div>
+            <h1>
+				Three ways to insert CSS</h1>
+			<hr>
+			<div>There are three ways of inserting a style sheet:<br>
+				1. External style sheet<br>
+				2. Internal style sheet<br>
+				3. Inline style<br><br>
+
+				<span style="color: darkgoldenrod"><strong>External Style Sheet</strong></span><br>
+				With an external style sheet, you can change the look of an entire website by changing just one file!<br>
+				Each page must include a reference to the external style sheet file inside the<span class="blu"> &lt;link&gt;</span> element. The <span class="blu">&lt;link&gt;</span> element goes inside the <span class="blu">&lt;head&gt;</span> section.<br><br>
+
+
+
+				<span style="color: darkgoldenrod"><strong>Internal Style Sheet</strong></span><br>
+				An internal style sheet may be used if one single page has a unique style. Internal styles are defined within the <span class="blu">&lt;style&gt;</span> element, inside the <span class="blu">&lt;head&gt;</span> section of an HTML page.<br><br>
+
+				<span style="color: darkgoldenrod"><strong>Inline Styles</strong></span><br>
+				An inline style may be used to apply a unique style for a single element.
+				To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+			</div>
+            
+<br><br>
+<div> 
+<a href="#" class="previous round" id="ba" onclick="leksionet(1);">&#8249;</a>
+<a class="next round" id="ba" onclick="leksionet(2)">&#8250;</a></div>
+
+
+        </div>
+
+        <div class="main">
+           <img src="light_e_ndezur.png" id="kuriozitete2" onclick="fik(2)">
+            <div id="kurioz2">
+            <span  id="close2" title="Close" onclick="mbyll(2)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+          <p id="k2">The hex '&#35;badA55 color is not so badass, it’s actually sort of lime</p>
+      </div>
+            <div class="icons">
+           <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'" >
+           <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+           </div>
+            <h1>CSS Syntax</h1>
+<hr><div>
+			A CSS rule-set consists of a selector and a declaration block:<br>
+	<img src="shemb.png"><br>
+	The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated by semicolons.
+Each declaration includes a CSS property name and a value, separated by a colon.
+A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.<br>
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element should be unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br>
+The class selector selects elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the name of the class.<br><br>
+	<span style="text-decoration: underline;">CSS Comments</span><br>
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+Comments are ignored by browsers. A CSS comment starts with /* and ends with */.
+
+
+			</div>
+
+<br><br>
+<div> 
+<a href="#" class="previous round" id="ba" onclick="leksionet(1);">&#8249;</a>
+<a class="next round" id="ba" onclick="leksionet(3)">&#8250;</a></div>
+
+        </div>
+
+        <div class="main">
+           <img src="light_e_ndezur.png" id="kuriozitete3" onclick="fik(3)">
+            <div id="kurioz3">
+            <span  id="close3" title="Close" onclick="mbyll(3)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+          <p id="k3">Originally, the CSS em unit was derived from the width of the capital letter M, which is where its name came from.</p>
+      </div>
+           
+           
+            <div class="icons">
+           <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'" >
+           <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+           </div>
+           
+            <h1> CSS colors</h1>
+            <hr>
+         Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. In HTML, a color can be specified by using a color name:
+         <br>
+				<h5 style="background-color: tomato; text-align: center; padding: 2%; margin-bottom: 0;">Tomato</h5>
+				<h5 style="background-color: orange; text-align: center; padding: 2%; margin: 0;">Orange</h5>
+				<h5 style="background-color: dodgerblue; text-align: center; padding: 2%; margin: 0;">DodgerBlue</h5>
+				<h5 style="background-color: mediumseagreen; text-align: center; padding: 2%; margin: 0;">MediumSeaGreen</h5>
+				<h5 style="background-color: gray; text-align: center; padding: 2%; margin: 0;">Gray</h5>
+				<h5 style="background-color: slateblue; text-align: center; padding: 2%; margin: 0;">SlateBlue</h5>
+				<h5 style="background-color: violet; text-align: center; padding: 2%; margin: 0;">Violet</h5>
+				You can set the background color for HTML elements, color of text and color of borders.<br>
+				<h3>RGB Value</h3>
+				In HTML, a color can be specified as an RGB value, using this formula:<br>
+				<strong>rgb(<span class="kuqe">red</span>, <span class="jeshile">green</span>, <span class="blu">blue</span>)</strong><br>
+				Each parameter (<span class="kuqe">red</span>, <span class="jeshile">green</span>, <span class="blu">blue</span>) defines the intensity of the color between 0 and 255.<br>
+				For example, <strong>rgb(255, 0, 0)</strong> is displayed as red, because red is set to its highest value (255) and the others are set to 0.<br>
+				To display the color black, all color parameters must be set to 0, like this: <strong>rgb(0, 0, 0)</strong>.<br>
+				To display the color white, all color parameters must be set to 255, like this: <strong>rgb(255, 255, 255)</strong>.
+
+				<h3>HEX Value</h3>
+				In HTML, a color can be specified using a hexadecimal value in the form:
+				<strong>#rrggbb</strong><br>
+				Where <span class="kuqe">rr (red)</span>, <span class="jeshile">gg (green)</span> and <span class="blu">bb (blue)</span> are hexadecimal values between 00 and ff (same as decimal 0-255).<br>
+				For example, <strong>#ff0000</strong> is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+
+				<h3>HSL Value</h3>
+				In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+				<strong>hsl(hue, saturation, lightness)</strong><br>
+				Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
+				Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.<br>
+				Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.
+
+				<h3>RGBA Value</h3>
+				RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.<br>
+				An RGBA color value is specified with:
+				<strong>rgba(<span class="kuqe">red</span>, <span class="jeshile">green</span>, <span class="blu">blue</span>, <span class="gria">alpha</span>)</strong>.<br>
+				The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+				<h3>HSLA Value</h3>
+				HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.<br>
+				An HSLA color value is specified with:<strong>hsla(hue, saturation, lightness, alpha)</strong>.<br>
+				The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+				<hr>
+				<h2>CSS Background</h2>
+				The CSS background properties are used to define the background effects for elements.
+				CSS background properties:
+				<ul><li><span class="jeshile">background-color</span> (Sets the background color of an element)</li>
+					<li><span class="jeshile">background-image</span> (Sets the background image for an element)</li>
+					<li><span class="jeshile">background-repeat</span> (Sets how a background image will be repeated)</li>
+					<li><span class="jeshile">background-attachment</span> (Sets whether a background image is fixed or scrolls with the rest of the page)</li>
+					<li><span class="jeshile">background-position</span> (Sets the starting position of a background image)</li>
+				</ul>
+         
+       
+       <div> 
+<a href="#" class="previous round" id="ba"onclick="leksionet(2);">&#8249;</a>
+<a class="next round" id="ba" onclick="leksionet(4);">&#8250;</a></div>
+       
+       
+       
+        </div>
+        
+        <div class="main">
+           <img src="light_e_ndezur.png" id="kuriozitete4" onclick="fik(4)">
+            <div id="kurioz4">
+            <span  id="close4" title="Close" onclick="mbyll(4)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+          <p id="k4">Nobody Uses border-image</p>
+      </div> <div class="icons">
+           <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'" >
+           <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+           </div>
+            <h1> Text &amp; Font</h1>
+             <hr>
+             <h2>CSS Text</h2>
+			<div>
+				<ul>
+					<li><span class="jeshile">color</span> &#8608; Sets the color of text</li>
+					<li><span class="jeshile">direction</span> &#8608; Specifies the text direction/writing direction</li>
+					<li><span class="jeshile">letter-spacing</span> &#8608; Increases or decreases the space between characters in a text</li>
+					<li><span class="jeshile">line-height</span> &#8608; Sets the line height</li>
+					<li><span class="jeshile">text-align</span> &#8608; Specifies the horizontal alignment of text</li>
+					<li><span class="jeshile">text-decoration</span> &#8608; Specifies the decoration added to text</li>
+					<li><span class="jeshile">text-shadow</span> &#8608; Specifies the shadow effect added to text</li>
+					<li><span class="jeshile">text-transform</span> &#8608; Controls the capitalization of text</li>
+					<li><span class="jeshile">text-indent</span> &#8608; Specifies the indentation of the first line in a text-block</li>
+				</ul>
+			</div>
+				<h4>Example</h4>
+				<p class="exp">
+					<span class="gri">&lt;!DOCTYPE html></span><br>
+					<span class="blu">&lt;html></span><br>
+					<span class="blu">&lt;head></span><br>
+					<span class="blu">&lt;style></span><br>
+					<span class="blu">div</span> {<br>
+					<span class="roz">border</span>: <span class="jeshile">1px</span> <span class="portokalli">solid</span> <span class="blu">gray</span>;<br>
+					<span class="roz">padding</span>: <span class="jeshile">8px</span>;<br>
+					}<br><br>
+
+					<span class="blu">h1</span> {<br>
+					<span class="roz">text-align</span>: <span class="jeshile">center</span>;<br>
+					<span class="roz">text-transform</span>: <span class="jeshile">uppercase</span>;<br>
+					<span class="gri">color</span>: <span class="portokalli">#944dff</span>;<br>
+					}<br><br>
+
+					<span class="blu">p</span> {<br>
+					<span class="roz">text-indent</span>: <span class="jeshile">50px</span>;<br>
+					<span class="roz">text-align</span>: <span class="portokalli">justify</span>;<br>
+					<span class="roz">letter-spacing</span>: <span class="jeshile">3px</span>;<br>
+					}<br>
+
+					<span class="blu">&lt;/style></span><br>
+					<span class="blu">&lt;/head></span><br>
+					<span class="blu">&lt;body></span><br><br>
+
+					<span class="blu">&lt;div></span><br>
+					<span class="blu">&lt;h1></span>text formatting<span class="blu">&lt;/h1></span><br>
+					<span class="blu">&lt;p></span>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.<br>
+					The paragraph is indented, aligned, and the space between characters is specified.<span class="blu">&lt;/p></span><br>
+					<span class="blu">&lt;/div></span><br><br>
+
+					<span class="blu">&lt;/body></span><br>
+					<span class="blu">&lt;/html></span>
+				</p>
+				<h4>Result</h4>
+
+				<div id="shformat">
+					<h1 id="h1format">text formatting</h1>
+					<p id="pformat">
+						This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+						The paragraph is indented, aligned, and the space between characters is specified.</p>
+				</div>
+				<hr>
+				<h2>CSS Fonts</h2>
+				<div>
+					<ul>
+						<li><span class="jeshile">font</span> &#8608; Sets all the font properties in one declaration</li>
+						<li><span class="jeshile">font-family</span> &#8608; Specifies the font family for text</li>
+						<li><span class="jeshile">font-size</span> &#8608; Specifies the font size of text</li>
+						<li><span class="jeshile">font-style</span> &#8608; Specifies the font style for text</li>
+						<li><span class="jeshile">font-variant</span> &#8608; Specifies whether or not a text should be displayed in a small-caps font</li>
+						<li><span class="jeshile">font-weight</span> &#8608; Specifies the weight of a font</li>
+					</ul>
+					<h4>Example</h4>
+				<p class="exp">
+				<span class="gri">&lt;!DOCTYPE html></span><br>
+				<span class="blu">&lt;html></span><br>
+				<span class="blu">&lt;head></span><br>
+				<span class="blu">&lt;style></span><br><br>
+				<span class="blu">p</span>{<br>
+				<span class="roz">font-style</span>: <span class="portokalli">italic</span>;<br>
+				<span class="roz">font-family</span>: <span class="portokalli">fantasy</span>;<br>
+				<span class="roz">font-size</span>: <span class="jeshile">20px</span>;<br>
+				<span class="roz">font-weight</span>: <span class="portokalli">bold</span>;<br>
+				}<br><br>
+
+				<span class="blu">&lt;/style></span><br>
+				<span class="blu">&lt;/head></span><br>
+				<span class="blu">&lt;body></span><br><br>
+
+				<span class="blu">&lt;p></span>This is a paragraph in italic style, fantasy font family, 20px font size and bold font weight.<span class="blu">&lt;/p></span><br><br>
+
+				<span class="blu">&lt;/body></span><br>
+				<span class="blu">&lt;/html></span>
+			</p>
+			<h4>Result</h4>
+			<p id="pformat2">This is a paragraph in italic style, fantasy font family, 20px font size and bold font weight.</p>
+				</div>
+					<hr>
+Chat Conversation End
+Type a message...
+
+             
+             
+             
+<br><br>
+        <div> 
+<a href="#" class="previous round" id="ba" onclick="leksionet(3);">&#8249;</a>
+<a class="next round" id="ba" onclick="leksionet(5);">&#8250;</a></div>
+        </div>
+
+        <div class="main">
+           <img src="light_e_ndezur.png" id="kuriozitete5" onclick="fik(5)">
+            <div id="kurioz5">
+            <span  id="close5" title="Close" onclick="mbyll(5)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+          <p id="k5">Originally, the CSS em unit was derived from the width of the capital letter M, which is where its name came from.</p>
+      </div>
+            <div class="icons">
+           <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'" >
+           <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+           </div>
+            <h1>Margin, Padding, Height &amp; Width</h1>
+            <hr>
+            <h3>CSS Margin</h3>
+			<p>
+				The CSS margin properties are used to create space around elements, outside of any defined borders.<br><br>
+				CSS has properties for specifying the margin for each side of an element:
+			</p>
+			<ul>
+				<span class="portokalli">
+					<li>margin-top</li>
+					<li>margin-right</li>
+					<li>margin-bottom</li>
+					<li>margin-left</li>
+				</span>
+			</ul>
+			All the margin properties can have the following values:
+			<ul>
+				<li><span class="jeshile">auto</span> - the browser calculates the margin</li>
+				<li><span class="jeshile">length</span> - specifies a margin in px, pt, cm, etc.</li>
+				<li><span class="jeshile">%</span> - specifies a margin in % of the width of the containing element</li>
+				<li><span class="jeshile">inherit</span> - specifies that the margin should be inherited from the parent element</li>
+			</ul>
+			<hr>
+			<h3>CSS Padding</h3>
+			The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br><br>
+			CSS has properties for specifying the padding for each side of an element:
+			<ul>
+				<span class="portokalli">
+					<li>padding-top</li>
+					<li>padding-right</li>
+					<li>padding-bottom</li>
+					<li>padding-left</li>
+				</span>
+			</ul>
+			All the padding properties can have the following values:
+			<ul>
+				<li><span class="jeshile">length</span> - specifies a padding in px, pt, cm, etc.</li>
+				<li><span class="jeshile">%</span> - specifies a padding in % of the width of the containing element</li>
+				<li><span class="jeshile">inherit</span> - specifies that the padding should be inherited from the parent element</li>
+			</ul>
+			<hr>
+			<h3>CSS Height and Width</h3>
+			The <span class="kuqe">height</span> and <span class="kuqe">width</span> properties are used to set the height and width of an element.
+			<br>
+			The <span class="kuqe">height</span> and <span class="kuqe">width</span> can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in length values, like px, cm, etc., or in percent (%) of the containing block.<br><br>
+			<h4>Margin, Padding, Height &amp; Width</h4>
+			<div class="exp">
+				<span class="gri">&lt;!DOCTYPE html></span><br>
+				<span class="blu">&lt;html></span><br>
+				<span class="blu">&lt;head></span><br>
+				<span class="blu">&lt;style></span><br><br>
+				<span class="blu">div</span> {<br>
+				<span class="roz">height</span>: <span class="jeshile">100px</span>;<br>
+				<span class="roz">width</span>: <span class="jeshile">500px</span>;<br>
+				<span class="roz">background-color</span>: <span class="blu">powderblue</span>;<br>
+				}<br><br>
+				<span class="blu">&lt;/style></span><br>
+				<span class="blu">&lt;/head></span><br>
+				<span class="blu">&lt;body></span><br><br>
+
+				<span class="blu">&lt;h2></span>Set the height and width of an element<span class="blu">&lt;/h2></span><br><br>
+
+				<span class="blu">&lt;p></span>This div element has a height of 100px and a width of 500px:<span class="blu">&lt;/p></span><br><br>
+
+				<span class="blu">&lt;div>&lt;/div></span><br><br>
+
+				<span class="blu">&lt;/body></span><br>
+				<span class="blu">&lt;/html></span>
+			</div>
+			<h4>Result</h4>
+			<div>
+				<h5>The height and width of an element</h5>
+
+				<p>This div element has a height of 100px and a width of 500px:</p>
+
+				<div class="divformat"></div>
+			</div>
+            <br><br>
+            <div> 
+<a href="#" class="previous round" id="ba" onclick="leksionet(4);">&#8249;</a>
+<a class="next round" id="ba" onclick="leksionet(2)">&#8250;</a></div>
+        </div>
+    </div>
+    <script>
+        initComparisons();
+//mbyll oren kur klikon ne dritare
+ 
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" class="fq3">
+
+<head>
+    <title>HTML</title>
+    <meta charset="utf-8">
+    <meta name="author" content="sindi xhesi">
+    <meta name="keywords" content="web design, web development, affordable, responsive">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link type="text/css" rel="stylesheet" href="gjuhe1.css">
+    <link rel="icon" href="tabicon.png" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+
+    <script src="projekt.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id="id01" class="modal">
+        <div class="modal-content animate">
+            <form id="forma" style="margin-left: 20%; margin-top: 1%; font-size: 1vw"><br>
+                <label> Send us your questions:</label><br><br>
+                <input type="email" placeholder="Your e-mail" style="width: 70%; border-radius: 10px;" required><br>
+                <textarea cols="30" rows="5" style="border-radius: 10px; resize: none; margin-top: 3%; width: 70%" placeholder="Type your question here..."></textarea><br>
+
+                <input style=" background-color: #2d862d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    font-size: 0.8vw;
+    width: 20%; height: 30px; margin-left: 15%; margin-bottom: 2%; " type="button" onclick="document.getElementById('id01').style.display = 'none'; document.getElementById('forma').reset()" value="Send" onclick="alert('Your question was sent. We will contact you soon.')" on>
+                <input style=" background-color: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    font-size: 0.8vw;
+    width: 20%; height: 30px; margin-bottom: 2%; " type="button" onclick="document.getElementById('id01').style.display = 'none'" value="Cancel ">
+            </form>
+        </div>
+    </div>
+    <div id="id02" class="modal">
+        <div class="modal-content2 animate">
+            <span id="date_time"></span>
+            <script type="text/javascript">
+                window.onload = date_time('date_time');
+
+            </script>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="faqe2.html"><img src="logoja.png" class="log" /></a>
+        <hr class="vija">
+        <button class="buton"><a href="gjuhe1.html">Introduction</a></button>
+
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(1);">Basics</a></button>
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(2);">Images and Formatting</a></button>
+
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(3);">Class and Id</a></button>
+        <hr class="vija">
+        <button class="buton"> <a href="#" onclick="leksionet(4);">Lists and Tables</a></button>
+
+        <hr class="vija">
+        <button class="buton"><a href="#" onclick="leksionet(5);">Forms</a></button>
+
+        <div class="pozfuter">
+            <footer id="futer">Copyright &copy;2019 All rights reserved | <br>Made with &#10084; by <span style="color: darkgoldenrod;">Semicolon</span> </footer>
+        </div>
+
+    </div>
+    <div>
+        <div class="main">
+            <h1 id="titull">
+                Introduction</h1>
+            <hr>
+            <p class="prezantim">HTML stands for Hyper Text Markup Language.<br>
+                HTML is the standard markup language for Web pages.<br>
+                HTML elements are the building blocks of HTML pages.<br>
+                HTML elements are represented by <span class="portokalli"> &lt; &gt;</span> tags.<br>
+            </p>
+            <hr>
+
+            <div class="img-comp-container">
+
+                <div class="img-comp-img">
+                    <img src="shembull_pamja.png" width="497" height="350">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="shembull.png" width="497" height="350">
+                </div>
+                <div class="pershkrim">
+                    The image on the left shows a code in HTML, while the image on the right shows its look on the web.<br>
+                    <i> (Slide the blue dot to open the full images)</i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="main" id="leksion1">
+            <img src="light_e_ndezur.png" id="kuriozitete1" onclick="fik(1)">
+
+
+            <div id="kurioz1">
+                <span id="close1" title="Close" onclick="mbyll(1)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+                <p id="k1">Peru and Tomato are actually both valid CSS color names.</p>
+
+            </div>
+            <div class="icons">
+                <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'">
+                <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+            </div>
+            <h1>
+                Basics</h1>
+            <hr>
+            <p> An HTML element usually consists of a start tag and end tag, with the content inserted in between: <br>
+
+                <span class="blu"> &lt;tagname&gt;</span>Content goes here...<span class="blu">&lt;/tagname&gt;</span><br><br>
+                The HTML element is everything from the start tag to the end tag:<br>
+
+                <span class="blu">&lt;p&gt;</span>My first paragraph. <span class="blu">&lt;/p&gt;</span>
+            </p>
+            <table class="tabele1">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Defines the document type</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Defines an HTML document</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Defines information about the document</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Defines a title for the document</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Defines the document's body</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                    <td>Defines HTML headings</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Defines a paragraph</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Defines a division or a section in an HTML document</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Inserts a single line break</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Defines a thematic change in the content</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;!--...--&gt;</td>
+                    <td>Defines a comment</td>
+
+                </tr>
+
+            </table>
+            <hr>
+            <h1> HTML Attributes</h1>
+
+            <p>All HTML elements can have attributes.<br>
+                Attributes provide additional information about an element.<br>
+                Attributes are always specified in the start tag.<br>
+                Attributes usually come in name/value pairs like: name="value". </p>
+            <h3>The href Attribute</h3>
+            <p>HTML links are defined with the <span class="blu">&lt;a&gt;</span> tag. The link address is specified in the href attribute:</p>
+            <h4>Example</h4>
+            <div class="exp">
+                <p>
+                    <span class="blu">&lt;a</span> <span class="jeshile">href</span>="<span class="portokalli">https://www.google.al/</span>"<span class="blu">></span>This is a link <span class="blu">&lt;a/&gt;</span>
+                    <br></p>
+            </div>
+            <h4>Result</h4>
+
+            <a href="https://www.google.al" target="_blank">This is a link</a>
+
+            <hr>
+            <h3> The style Attribute</h3>
+            <p> The style attribute is used to specify the styling of an element, like color, font, size etc.</p>
+            <h4>Example</h4>
+            <p class="exp">
+                <span class="blu">&lt;p</span> <span class="jeshila">style</span>=<span class="portokalli">"color:red"</span> <span class="blu">&gt;</span>I am a paragraph <span class="blu">&lt;/p&gt;</span><br>
+
+            </p>
+            <h4>Result</h4>
+            <p style="color:red">I am a paragraph</p>
+            <h3> The title Attribute</h3>
+            <p>Here, a title attribute is added to the <span class="blu">&lt;p&gt;</span> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:</p>
+            <h4>Example</h4>
+            <div class="exp">
+                <span class="blu">&lt;p</span> <span class="jeshile">title</span>=<span class="portokalli">"I'm a tooltip"</span><span class="blu">&gt;</span>
+                This is a paragraph.
+                <span class="blu"> &lt;/p&gt;</span></div>
+            <h4>Result</h4>
+            <p>This is a paragraph.</p>
+            <hr>
+            <br><br>
+            <div>
+                <a href="#" class="previous round" id="ba" onclick="leksionet(1);">&#8249;</a>
+                <a class="next round" id="ba" onclick="leksionet(2)">&#8250;</a></div>
+
+
+        </div>
+
+        <div class="main">
+            <img src="light_e_ndezur.png" id="kuriozitete2" onclick="fik(2)">
+            <div id="kurioz2">
+                <span id="close2" title="Close" onclick="mbyll(2)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+                <p id="k2">How to tell if a site’s using HTML5?<br>
+                    Try it on Internet Explorer.<br>
+                    Did it work?<br>
+                    No?<br>
+                    It’s HTML5</p>
+            </div>
+            <div class="icons">
+                <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'">
+                <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+            </div>
+            <h1> HTML Images and Formatting</h1>
+            <hr>
+            <h3> Images and their attributes</h3>
+
+            <p> HTML images are defined with the <span class="blu">&lt;img&gt;</span> tag.
+
+                The filename of the image source is specified in the src attribute<br>
+                Images in HTML have a set of size attributes, which specifies the width and height of the image.<br>
+                The alt attribute specifies an alternative text to be used, when an image cannot be displayed.<br>
+            </p>
+            <h4>Example</h4>
+            <p class="exp">
+                <span class="blu"> &lt;img</span> <span class="jeshile">src</span>="<span class="portokalli">img.jpg</span>" <span class="jeshile">width</span>=<span class="portokalli">"200"</span> <span class="jeshile">height</span>=<span class="portokalli">"200"</span> <span class="jeshile">alt</span>=<span class="portokalli"> "A sunflower."</span> <span class="blu">/&gt;</span> <br>
+
+
+            </p>
+            <h4>Result</h4>
+            <img src="img.jpg" width="200" height="200" alt="A sunflower">
+            <hr>
+            <h3> Text formatting</h3>
+            <p>Formatting elements were designed to display special types of text</p>
+
+            <ul>
+                <li> <span class="kuqe">&lt;b&gt;</span>- Bold text</li>
+                <li><span class="kuqe">&lt;strong&gt;</span>-Important text</li>
+                <li><span class="kuqe">&lt;i&gt;</span>-Italic text</li>
+                <li><span class="kuqe">&lt;em&gt;</span>- Emphasized text</li>
+                <li><span class="kuqe">&lt;mark&gt;</span>-Marked text</li>
+                <li><span class="kuqe">&lt;small&gt;</span>-Small text</li>
+                <li><span class="kuqe">&lt;del&gt;</span>-Deleted text</li>
+                <li><span class="kuqe">&lt;ins&gt;</span>-Inserted text</li>
+                <li><span class="kuqe">&lt;sub&gt;</span>-Subscript text</li>
+                <li><span class="kuqe">&lt;sup&gt;</span>-Superscript text</li>
+            </ul>
+            <h4>Example 1</h4>
+            <p class="exp">
+                <span class="blu">&lt;b&gt;</span>This text is bold<span class="blu">&lt;/b&gt;</span></p>
+            <h4>Result</h4>
+            <p><b>This text is bold</b></p>
+            <hr>
+            <h4>Example 2</h4>
+            <p class="exp">
+                <span class="blu">&lt;strong&gt;</span>This text is strong<span class="blu">&lt;/strong&gt;</span></p>
+            <h4>Result</h4>
+            <p><strong>This text is strong</strong></p>
+            <hr>
+            <h4>Example 3</h4>
+            <p class="exp">
+                <span class="blu">&lt;i&gt;</span>This text is italic<span class="blu">&lt;/i&gt;</span></p>
+            <h4>Result</h4>
+            <p><i>This text is italic</i></p>
+            <hr>
+            <h4>Example 4</h4>
+            <p class="exp">
+                <span class="blu">&lt;em&gt;</span>This text is emphasized<span class="blu">&lt;/em&gt;</span></p>
+            <h4>Result</h4>
+            <p><em>This text is emphasized</em></p>
+            <hr>
+
+            <h4>Example 5</h4>
+            <p class="exp">
+                <span class="blu">&lt;h2&gt;</span>HTML<span class="blu">&lt;small&gt;</span>Small<span class="blu">&lt;/small&gt;</span>Text<span class="blu">&lt;/h2&gt;</span></p>
+            <h4>Result</h4>
+            <h2>HTML <small>Small</small> Text</h2>
+            <hr>
+            <h4>Example 6</h4>
+            <p class="exp">
+                <span class="blu">&lt;h2&gt;</span>HTML<span class="blu">&lt;mark&gt;</span>Marked<span class="blu">&lt;/mark&gt;</span>Text<span class="blu">&lt;/h2&gt;</span></p>
+            <h4>Result</h4>
+            <h2>HTML <mark>Marked</mark> Text</h2>
+            <hr>
+            <h4>Example 7</h4>
+            <p class="exp">
+                <span class="blu">&lt;p&gt;</span>My favorite color is <span class="blu">&lt;del&gt;</span>blue<span class="blu">&lt;/del&gt;</span>red.<span class="blu">&lt;/p&gt;</span></p>
+            <h4>Result</h4>
+            <p>My favorite color is <del>blue</del> red.</p>
+            <hr>
+
+            <h4>Example 8</h4>
+            <p class="exp">
+                <span class="blu">&lt;h2&gt;</span>My<span class="blu">&lt;ins&gt;</span>favorite color<span class="blu">&lt;ins&gt;</span>is red.<span class="blu">&lt;/h2&gt;</span></p>
+            <h4>Result</h4>
+            <p>My <ins>favorite color</ins> is red.</p>
+            <hr>
+            <h4>Example 9</h4>
+            <p class="exp">
+                <span class="blu">&lt;p&gt;</span>This is<span class="blu">&lt;sub&gt;</span> subscripted<span class="blu">&lt;sub&gt;</span>text.<span class="blu">&lt;/p&gt;</span></p>
+            <h4>Result</h4>
+            <p>This is <sub>subscripted</sub> text.</p>
+            <hr>
+
+            <h4>Example 10</h4>
+            <p class="exp">
+                <span class="blu">&lt;p&gt;</span>This<span class="blu">&lt;sup&gt;</span> is superscripted<span class="blu">&lt;sup&gt;</span> text.<span class="blu">&lt;/p&gt;</span></p>
+            <h4>Result</h4>
+            <p>This <sub>is superscripted</sub> text. </p>
+            <br><br>
+            <div>
+                <a href="#" class="previous round" id="ba" onclick="leksionet(1);">&#8249;</a>
+                <a class="next round" id="ba" onclick="leksionet(3)">&#8250;</a></div>
+
+
+
+
+
+        </div>
+
+        <div class="main">
+            <img src="light_e_ndezur.png" id="kuriozitete3" onclick="fik(3)">
+            <div id="kurioz3">
+                <span id="close3" title="Close" onclick="mbyll(3)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+                <p id="k3">The average web page has around 71 divs. This number was computed after counting all the div elements (576,067,185) encountered within 8,021,323 million pages.</p>
+            </div>
+
+
+            <div class="icons">
+                <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'">
+                <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+            </div>
+
+            <h1> HTML Class and Id</h1>
+            <hr>
+            <h3>The class Attribute</h3>
+            <p>The HTML <span class="jeshile">class</span> attribute is used to define equal styles for elements with the same class name.<br>
+                So, all HTML elements with the same <span class="jeshile">class</span> attribute will have the same format and style.<br>
+                Here we have two <span class="blu">&lt;p&gt;</span> elements that point to the same class name:<br></p>
+
+            <h4>Example</h4>
+            <p class="exp">
+
+                <span class="gri">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="blu">&lt;html&gt;<br>
+                    &lt;head&gt; <br>
+                    &lt;style&gt; <br>
+                    .cities</span> &#123;<br>
+                <span class="roz">color:</span> <span class="blu">darkmagenta</span>;<br>
+                &#125;<br>
+                <span class="blu">&lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;</span><br>
+                <span class="blu">&lt;p</span> <span class="jeshile">class</span>=<span class="portokalli">"cities"</span><span class="blu">></span>Tirana is the capital of Albania.<span class="blu">&lt;/p&gt;</span><br>
+                <span class="blu">&lt;p</span> <span class="jeshile">class</span>= <span class="portokalli">"cities"</span><span class="blu">></span>Paris is the capital of France.<span class="blu">&lt;/p&gt;</span><br>
+                <span class="blu">&lt;p&gt;</span>Tokyo is the capital of Japan.<span class="blu">&lt;/p&gt;</span><br>
+                <span class="blu">&lt;/body&gt;<br>
+                    &lt;/html&gt;</span><br></p>
+            <h4>Result</h4>
+            <p class="cities">Tirana is the capital of Albania.</p>
+            <p class="cities">Paris is the capital of France.</p>
+            <p>Tokyo is the capital of Japan.</p>
+            <hr>
+            <h3>Using The class Attribute on Inline Elements</h3>
+            <p>The HTML <span class="jeshile">class</span> attribute can also be used on inline elements:</p>
+            <h4>Example</h4>
+
+            <p class="exp">
+            <span class="gri">&lt;&amp;!DOCTYPE html&gt;</span><br>
+            <span class="blu">&lt;html&gt;<br>
+                &lt;head&gt; <br>
+                &lt;style&gt; <br>
+                span.note</span> &#123;<br>
+            <span class="roz">color:</span> <span class="blu">darkmagenta</span>;<br>
+            <span class="roz">font-size:</span> <span class="blu">45px</span>;
+            &#125;<br>
+            <span class="blu">&lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;</span><br>
+
+            <span class="blu">&lt;h4&gt;</span>My <span class="blu">&lt;span</span> <span class="jeshile">class</span>=<span class="portokalli">"note"</span> <span class="blu">&gt;</span>Important <span class="blu">&lt;/span&gt;</span> Heading <span class="blu">&lt;/h4&gt; <br>
+                &lt;p&gt;</span>This is some <span class="blu">&lt;span</span> <span class="jeshile">class</span>=<span class="portokalli">"note"</span> <span class="blu">&gt;</span>important <span class="blu">&lt;/span&gt;</span> text. <span class="blu">&lt;/p&gt;</span>
+
+
+            <span class="blu">&lt;/body&gt;<br>
+                &lt;/html&gt;</span><br></p>
+            <h4>Result</h4>
+            <h4>My <span class="note">Important</span> Heading</h4>
+            <p>This is some <span class="note">important</span> text.</p>
+            <hr>
+
+            <h3>Using The class Attribute in JavaScript</h3>
+            <p>The class name can also be used by JavaScript to perform certain tasks for elements with the specified class name.
+
+                JavaScript can access elements with a specified class name by using the <span class="kuqe">getElementsByClassName()</span> method:</p>
+            <h4>Example</h4>
+            <p class="exp">
+                <span class="gri">&lt;&amp;!DOCTYPE html&gt;</span><br>
+                <span class="blu">&lt;html&gt;<br>
+                    &lt;head&gt; <br>
+                    &lt;script&gt;</span> <br>
+
+
+                <span class="blu">function</span> <span class="roz">myFunction</span>() &#123; <br>
+
+                <span class="blu">var</span> <span class="roz">x</span> = <span class="jeshile">document</span>.<span class="roz">getElementsByClassName</span>(<span class="portokalli">"city"</span>);<br>
+                <span class="blu">for</span> ( <span class="blu">var</span> <span class="jeshile">i</span> = <span class="jeshile">0</span>; <span class="jeshile">i</span> &lt;<span class="jeshile"> x</span>.<span class="roz">length</span>; <span class="jeshile">i++</span>) &#123; <br>
+                <span class="jeshile">x</span>[<span class="jeshile">i</span>].<span class="roz">style</span>.<span class="roz">display</span> = <span class="portokalli">"none"</span>;<br>
+                &#125;<br>
+                &#125;<br>
+
+
+
+
+
+                <span class="blu">&lt;/script&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;</span><br>
+                <span class="blu"> &lt;button</span> <span class="jeshile">onclick</span>=<span class="portokalli">"myFunction()"</span><span class="blu">&gt;</span>Hide elements<span class="blu">&lt;/button&gt;</span><br>
+                <span class="blu"> &lt;p</span> <span class="jeshile">class</span>=<span class="portokalli">"city"</span><span class="blu">&gt;</span>Tirana<span class="blu">&lt;/p&gt;</span><br>
+                <span class="blu">&lt;p&gt;</span>Tirana is the capital of Albania.<span class="blu">&lt;/p&gt;</span>
+                <br>
+
+                <span class="blu">&lt;/body&gt;<br>
+                    &lt;/html&gt;</span><br>
+            </p>
+
+
+
+
+            <h4>Result</h4>
+            <p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+            <button onclick="myFunction()">Hide elements</button>
+            <p class="city">Tirana</p>
+            <p>Tirana is the capital of Albania.</p>
+            <hr>
+            <h3>The id Attribute</h3>
+            <p>The <span class="kuqe">id</span> attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).<br>The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.<br>In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:</p>
+            <h4>Example</h4>
+            <p class="exp">
+
+
+                <span class="blu">&lt;style&gt;<br>
+                    &#35;myHeader</span> &#123;<br>
+                <span class="roz">background-color</span>: <span class="blu">lightblue</span>;<br>
+                <span class="roz">color</span>: <span class="blu">black</span>;<br>
+                <span class="roz">padding</span>:<span class="blu"> 40px</span>;<br>
+                <span class="roz">text-align</span>:<span class="blu"> center</span>;<br>
+                &#125; <br>
+                <span class="blu">&lt;body&gt;</span><br>
+
+                <span class="blu">&lt;h5</span> <span class="jeshile">id</span>=<span class="portokalli">"myHeader"</span><span class="blu">&gt;</span>My Header<span class="blu">&lt;/h5&gt; <br>&lt;/body&gt;
+                </span></p>
+            <h4>Result</h4>
+            <h5 id="myHeader">My Header</h5>
+            <hr>
+
+            <h3>Using The id Attribute in JavaScript</h3>
+            <h4>Example</h4>
+            <p class="exp">
+                <span class="blu">&lt;script&gt;</span> <br>
+
+
+                <span class="blu">function</span> <span class="roz">displayResult</span>() &#123; <br>
+
+                <span class="jeshile">document</span>.<span class="roz">getElementById</span>(<span class="portokalli">"myHeader"</span>).<span class="roz">innerHTML</span>=<span class="portokalli">"Have a nice day!"</span>;<br>
+                &#125;<br>
+                <span class="blu">&lt;/script&gt;<br>
+                    &lt;body&gt; <br>
+                    &lt;h5</span> <span class="jeshile">id</span>=<span class="portokalli">"myHeader"</span><span class="blu">&gt;</span>Hello World!<span class="blu">&lt;/h5&gt;<br>
+                    &lt;button</span> <span class="jeshile">onclick</span>=<span class="portokalli">"displayResult()"</span><span class="blu">&gt;</span>Change text<span class="blu">&lt;/button&gt; <br> &lt;/body&gt;</span>
+            </p>
+            <h4>Result</h4>
+            <h5 id="myHeader1">Hello World!</h5>
+            <button onclick="displayResult()">Change text</button>
+
+            <hr>
+            <h3>Difference Between Class and ID</h3>
+            <h4>Example</h4>
+
+
+
+            <p class="exp">
+                <span class="blu">&lt;style &gt; <br></span>
+                <span class="jeshile">/&#42; Style the element with the id "myHeader" &#42;/<br></span>
+                <span class="blu">&#35;myHeader </span> &#123;<br>
+                <span class="roz">background-color</span>: <span class="blu">lightblue</span>;<br>
+                <span class="roz">color</span>: <span class="blu">black</span>;<br>
+                <span class="roz">text-align</span>: <span class="blu">center</span>; <br>
+                &#125;<br>
+
+                <span class="jeshile">/&#42; Style the element with the class name "city" &#42;/<br></span>
+                <span class="blu">.city</span> &#123;<br>
+                <span class="roz">background-color</span>: <span class="blu">tomato</span>;<br>
+                <span class="roz">color</span>: <span class="blu">white</span>;<br>
+
+                &#125;
+                <span class="blu">&lt;/style&gt;<br>
+                    &lt;body&gt;</span><br>
+                <span class="blu">&lt;h5</span> <span class="jeshile">id</span>=<span class="portokalli">"myHeader"</span><span class="blu">&gt;</span>My Cities<span class="blu">&lt;/h5&gt;</span><br>
+
+
+                <span class="blu">&lt;h5</span> <span class="jeshile">class</span>=<span class="portokalli">"city"</span><span class="blu">&gt;</span> London<span class="blu">&lt;/h5&gt;</span><br>
+                <span class="blu">&lt;/body&gt;</span><br>
+            </p>
+
+
+            <h4>Result</h4>
+            <h5 id="myHeader10">My Cities</h5>
+
+
+            <h5 class="city10">London</h5>
+
+
+            <br><br>
+
+            <div>
+                <a href="#" class="previous round" id="ba" onclick="leksionet(2);">&#8249;</a>
+                <a class="next round" id="ba" onclick="leksionet(4);">&#8250;</a></div>
+
+
+        </div>
+
+        <div class="main">
+            <img src="light_e_ndezur.png" id="kuriozitete4" onclick="fik(4)">
+            <div id="kurioz4">
+                <span id="close4" title="Close" onclick="mbyll(4)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+                <p id="k4">With the HTML5 arrival, you’d only need to define the doctype and title in order to create a new valid web page.</p>
+            </div>
+            <div class="icons">
+                <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'">
+                <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+            </div>
+            <h1> HTML List and Tables</h1>
+            <hr>
+            <h3> HTML Lists</h3>
+
+            <div class="list1">
+                <h4>An Unordered HTML List</h4>
+                <ul>
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Kiwi</li>
+                </ul>
+            </div>
+            <div class="list2">
+                <h4>An Ordered HTML List</h4>
+                <ol>
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Kiwi</li>
+                </ol>
+            </div>
+            <div class="problemi">
+                <hr>
+                <h4>Unordered HTML List</h4>
+                <p>An unordered list starts with the <span class="blu">&lt;ul&gt;</span> tag. Each list item starts with the <span class="blu">&lt;li&gt;</span> tag.<br>
+                    The list items will be marked with bullets (small black circles) by default.</p>
+                <h5>Example</h5>
+                <p class="exp">
+                    <span class="blu">&lt;ul&gt;</span><br>
+                    <span class="blu">&lt;li&gt;</span>Coffee<span class="blu">&lt;/li&gt;</span><br>
+                    <span class="blu">&lt;li&gt;</span>Tea<span class="blu">&lt;/li&gt;</span><br>
+                    <span class="blu">&lt;li&gt;</span>Milk<span class="blu">&lt;/li&gt;</span><br>
+                    <span class="blu">&lt;/ul&gt;</span></p>
+            </div>
+            <hr>
+            <h4>Ordered HTML List</h4>
+            <p>An ordered list starts with the <span class="blu">&lt;ol&gt;</span> tag. Each list item starts with the <span class="blu">&lt;li&gt;</span> tag.<br>
+                The list items will be marked with numbers by default.</p>
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="blu">&lt;ol&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Coffee<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Tea<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Milk<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;/ol&gt;</span></p>
+            <hr>
+            <h4>The Type Attribute - Ordered List</h4>
+            <p>The <span class="kuqe">type</span> attribute of the <span class="blu">&lt;ol&gt;</span> tag, defines the type of the list item marker.</p>
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="blu">&lt;ol</span> <span class="jeshile">type</span>=<span class="portokalli">"i"</span><span class="blu">&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Apple<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Orange<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;li&gt;</span>Kiwi<span class="blu">&lt;/li&gt;</span><br>
+                <span class="blu">&lt;/ol&gt;</span></p>
+
+            <h5>Result</h5>
+            <div style="margin-left: 26px;">
+                <ol type="i">
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Kiwi</li>
+                </ol>
+            </div>
+            <table class="tabele1">
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+
+                </tr>
+                <tr>
+                    <td>type="1"</td>
+                    <td>The list items will be numbered with numbers (default)</td>
+
+                </tr>
+                <tr>
+                    <td>type="A"</td>
+                    <td>The list items will be numbered with uppercase letters</td>
+
+                </tr>
+                <tr>
+                    <td>type="a"</td>
+                    <td>The list items will be numbered with lowercase letters</td>
+
+                </tr>
+                <tr>
+                    <td>type="I"</td>
+                    <td>The list items will be numbered with uppercase roman numbers</td>
+
+                </tr>
+                <tr>
+                    <td>type="i"</td>
+                    <td>The list items will be numbered with lowercase roman numbers</td>
+
+                </tr>
+
+            </table>
+            <hr>
+
+            <h4>Description Lists</h4>
+            <p>
+                HTML also supports description lists.
+
+                A description list is a list of terms, with a description of each term.
+
+                The <span class="blu">&lt;dl&gt;</span> tag defines the description list, the <span class="blu">&lt;dt&gt;</span> tag defines the term (name), and the <span class="blu">&lt;dd&gt;</span> tag describes each term.
+            </p>
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="blu">&lt;dl&gt;</span><br>
+                <span class="blu">&lt;dt&gt;</span>Coffee<span class="blu">&lt;/dt&gt;</span><br>
+                <span class="blu">&lt;dd&gt;</span>- black hot drink<span class="blu">&lt;/dd&gt;</span><br>
+                <span class="blu">&lt;dt&gt;</span>Milk<span class="blu">&lt;/dt&gt;</span><br>
+                <span class="blu">&lt;dd&gt;</span>- white cold drink<span class="blu">&lt;/dd&gt;</span><br>
+                <span class="blu">&lt;/dl&gt;</span></p>
+
+            <h5>Result</h5>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl>
+            <hr>
+            <h3>HTML Tables</h3>
+            <h4>Defining an HTML Table</h4>
+            <p>
+                An HTML table is defined with the <span class="blu">&lt;table&gt;</span> tag.
+
+                Each table row is defined with the <span class="blu">&lt;tr&gt;</span> tag. A table header is defined with the <span class="blu">&lt;th&gt;</span> tag. By default, table headings are bold and centered. A table data/cell is defined with the <span class="blu">&lt;td&gt;</span> tag.<br> If you do not specify a border for the table, it will be displayed without borders. A border is set using the CSS <span class="roz">border</span> property.<br>If you want the borders to collapse into one border, add the CSS <span class="roz">border-collapse</span> property.<br>Cell padding specifies the space between the cell content and its borders.
+                If you do not specify a padding, the table cells will be displayed without padding.
+                To set the padding, use the CSS <span class="roz">padding</span> property.
+            </p>
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="gri">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="blu">&lt;html&gt;</span><br>
+                <span class="blu">&lt;head&gt;</span><br>
+                <span class="blu">&lt;style&gt;</span><br>
+                table, td, td&#123;<br>
+                &nbsp; <span class="roz">border</span>: <span class="jeshile">1px</span> <span class="portokalli">solid</span> <span class="blu">black</span>;<br>
+                &nbsp; <span class="roz">border-collapse</span>: <span class="jeshile">collapse</span>;<br>
+                &nbsp;<span class="roz"> padding</span>: <span class="jeshile">10px</span>;<br>&#125;<br>
+
+                <span class="blu">&lt;/style&gt;</span><br>
+                <span class="blu">&lt;/head&gt;</span><br>
+
+                <span class="blu">&lt;body&gt;</span><br>
+
+                <span class="blu">&lt;h5&gt;</span>Basic HTML Table<span class="blu">&lt;/h5&gt;</span><br>
+
+                <span class="blu">&lt;table <span class="blu">style</span>=<span class="portokalli">"width:60%"</span>&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                &nbsp; <span class="blu">&lt;th&gt;</span>Firstname<span class="blu">&lt;/th&gt;</span><br>
+                &nbsp; <span class="blu">&lt;th&gt;</span>Lastname<span class="blu">&lt;/th&gt;</span><br>
+                &nbsp; <span class="blu">&lt;th&gt;</span>Age<span class="blu">&lt;/th&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>Jill<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>Smith<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>50<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>Eve<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>Jackson<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>94<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>John<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>Doe<span class="blu">&lt;/td&gt;</span><br>
+                &nbsp; <span class="blu">&lt;td&gt;</span>80<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;/table&gt;</span><br>
+
+                <span class="blu">&lt;/body&gt;</span><br>
+                <span class="blu"> &lt;/html&gt;</span>
+            </p>
+            <h4>Result</h4>
+            <h5>Basic HTML Table</h5>
+
+            <table class="tabele3">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+            </table>
+            <hr>
+            <h3>Colspan</h3>
+            <p>
+                To make a cell span more than one column, use the <span class="blu">colspan</span> attribute.
+            </p>
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="gri">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="blu">&lt;html&gt;</span><br>
+                <span class="blu">&lt;head&gt;</span><br>
+                <span class="blu">&lt;style&gt;</span><br>
+                table,
+                th,
+                td &#123;<br>
+                <span class="roz">border</span>: <span class="jeshile">1px</span> <span class="portokalli">solid</span> <span class="blu">black</span>;<br>
+                <span class="roz">border-collapse</span>: <span class="portokalli">collapse</span>;<br>
+                &#125;<br>
+
+                th,
+                td &#123;<br>
+                <span class="roz">padding</span>: <span class="portokalli">5px</span>;<br>
+                <span class="roz">text-align</span>: <span class="roz">left</span>;<br>
+                &#125;<br>
+                <span class="blu">&lt;/style&gt;</span><br>
+                <span class="blu">&lt;/head&gt;</span><br><br>
+
+                <span class="blu">&lt;body&gt;</span><br>
+
+                <span class="blu">&lt;table style</span>=<span class="portokalli">"width:100%"</span>&gt;<br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                <span class="blu">&lt;th&gt;</span>Name<span class="blu">&lt;/th&gt;</span><br>
+                <span class="blu">&lt;th</span> <span class="jeshile">colspan="<span class="portokalli">2</span>"</span><span class="blu">&gt;</span>Telephone<span class="blu">&lt;/th&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>Steve Jobs<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>55577854<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>55577855<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;/table&gt;</span><br>
+
+                <span class="blu">&lt;/body&gt;</span><br>
+                <span class="blu">&lt;/html&gt;</span>
+            </p>
+            <h5>Result</h5>
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <style>
+                    table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+            </head>
+
+            <body>
+
+
+
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Telephone</th>
+                    </tr>
+                    <tr>
+                        <td>Steve Jobs</td>
+                        <td>55577854</td>
+                        <td>55577855</td>
+                    </tr>
+                </table>
+
+            </body>
+
+            </html>
+            <hr>
+
+
+            <h3>Rowspan</h3>
+            <p>
+                To make a cell span more than one row, use the <span class="blu">rowspan</span> attribute.
+            </p>
+
+            <h5>Example</h5>
+            <p class="exp">
+                <span class="blu">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="blu">&lt;html&gt;</span><br>
+                <span class="blu">&lt;head&gt;</span><br>
+                <span class="blu">&lt;style&gt;</span><br>
+                table,
+                th,
+                td &#123;<br>
+                <span class="roz">border</span>: <span class="jeshile">1px</span> <span class="portokalli">solid</span> <span class="blu">black</span>;<br>
+                <span class="roz">border-collapse</span>: <span class="portokalli">collapse</span>;<br>
+                &#125;<br><br>
+
+                th,
+                td &#123;<br>
+                <span class="roz">padding</span>: <span class="jeshile">5px</span>;<br>
+                <span class="roz">text-align</span>: <span class="portokalli">left</span>;<br>
+                &#125;<br>
+                <span class="blu">&lt;/style&gt;</span><br>
+                <span class="blu">&lt;/head&gt;</span><br><br>
+
+                <span class="blu">&lt;body&gt;</span><br>
+
+
+                <span class="blu">&lt;table style</span>= <span class="portokalli">"width:100%"</span> <span class="blu">&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                <span class="blu">&lt;th&gt;</span>Name: <span class="blu">&lt;/th&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>Steve Jobs<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                <span class="blu">&lt;th</span> <span class="jeshile">rowspan="<span class="portokalli">2</span>"</span><span class="blu">&gt;</span>Telephone:<span class="blu">&lt;/th&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>55577854<span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;tr&gt;</span><br>
+                <span class="blu">&lt;td&gt;</span>55577855 <span class="blu">&lt;/td&gt;</span><br>
+                <span class="blu">&lt;/tr&gt;</span><br>
+                <span class="blu">&lt;/table&gt;</span><br>
+
+                <span class="blu">&lt;/body&gt;</span><br>
+                <span class="blu">&lt;/html&gt;</span><br>
+            </p>
+            <h5>Result</h5>
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <style>
+                    table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+            </head>
+
+            <body>
+
+                <table style="width:100%">
+                    <tr>
+                        <th>Name:</th>
+                        <td>Steve Jobs</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Telephone:</th>
+                        <td>55577854</td>
+                    </tr>
+                    <tr>
+                        <td>55577855</td>
+                    </tr>
+                </table>
+
+            </body>
+
+            </html><br><br>
+            <div>
+                <a href="#" class="previous round" id="ba" onclick="leksionet(3);">&#8249;</a>
+                <a class="next round" id="ba" onclick="leksionet(5);">&#8250;</a></div>
+
+        </div>
+
+        <div class="main">
+            <img src="light_e_ndezur.png" id="kuriozitete5" onclick="fik(5)">
+            <div id="kurioz5">
+                <span id="close5" title="Close" onclick="mbyll(5)"><i class="material-icons" style="margin-top: 5px;">&#xe888;</i></span>
+                <p id="k5">Speaking of buttons, the button element has a default type of submit.</p>
+            </div>
+            <div class="icons">
+                <img class="info" src="help.png" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display = 'none'">
+                <img class="clock" src="time.png" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display = 'none'">
+            </div>
+            <h1> HTML Forms</h1>
+            <hr>
+            <p>The HTML <span class="blu">&lt;form&gt;</span> element defines a form that is used to collect user input.
+                Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.</p>
+            <h3>The <span class="blu">&lt;input&gt;</span> Element</h3>
+            <p>The <span class="blu">&lt;input&gt;</span> element is the most important form element.
+                The <span class="blu">&lt;input&gt;</span> element can be displayed in several ways, depending on the type attribute.</p>
+            <table class="tabele1" style="width: 80%">
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Defines a one-line text input field.</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="radio"&gt;</td>
+                    <td>Defines a radio button (for selecting one of many choices).</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="submit"&gt;</td>
+                    <td>Defines a submit button (for submitting the form).</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="password"&gt;</td>
+                    <td>Defines a password field.</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="reset"&gt;</td>
+                    <td>Defines a reset button that will reset all form values to their default values</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>Defines a checkbox</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="button"&gt;</td>
+                    <td>Defines a clickable button</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="color"&gt;</td>
+                    <td>Is used for input fields that should contain a color</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;input type="email"&gt;</td>
+                    <td>Is used for input fields that should contain an e-mail address</td>
+
+                </tr>
+
+            </table>
+
+
+            <hr>
+
+
+            <ul>
+                <li>
+                    The <span class="blu">&lt;fieldset&gt;</span> element is used to group related data in a form.</li> <br>
+                <li>The <span class="blu">&lt;legend&gt;</span> element defines a caption for the <span class="blu">&lt;fieldset&gt;</span> element.</li> <br>
+                <li> The <span class="blu">&lt;select&gt;</span> element defines a drop-down list.</li> <br>
+
+
+                <li>The <span class="blu">&lt;option&gt;</span> elements defines an option that can be selected.
+                    By default, the first item in the drop-down list is selected.
+                    To define a pre-selected option, add the selected attribute to the option.</li><br>
+                <li>The <span class="blu">&lt;textarea&gt;</span> element defines a multi-line input field (a text area).
+                    The rows attribute specifies the visible number of lines in a text area.
+                    The cols attribute specifies the visible width of a text area.
+                    This is how the HTML code above will be displayed in a browser.</li><br>
+            </ul>
+            <hr>
+            <h3>HTML Input Attributes</h3>
+            <p>
+                The <span class="jeshile">value</span> attribute specifies the initial value for an input field.<br> <br>
+                The <span class="jeshile">disabled</span> attribute specifies that the input field is disabled.<br>
+                A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form.<br><br>
+                The <span class="jeshile">autocomplete</span> attribute specifies whether a form or input field should have autocomplete on or off.<br>
+                When autocomplete is on, the browser automatically completes the input values based on values that the user has entered before.<br><br>
+                The <span class="jeshile">placeholder</span> attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).<br>
+                The hint is displayed in the input field before the user enters a value.<br><br>
+                The <span class="jeshile">required</span> attribute specifies that an input field must be filled out before submitting the form.<br>
+                The required attribute works with the following input types: <span class="blu">text</span>,<span class="blu"> search</span>, <span class="blu">url</span>, <span class="blu">tel</span>, <span class="blu">email</span>,<span class="blu"> password</span>, <span class="blu">date pickers</span>,<span class="blu"> number</span>,<span class="blu"> checkbox</span>, <span class="blu">radio</span>, and <span class="blu">file</span>
+            </p>
+            <hr>
+            <h4>Example</h4>
+            <p class="exp">
+                <span class="blu">&lt;form</span> <span class="jeshile">action</span>=<span class="portokalli">"page.php"</span> <span class="jeshile">method</span>=<span class="portokalli">"get"</span> <span class="jeshile">autocomplete</span>=<span class="portokalli">"on"</span><span class="blu">&gt;<br>
+
+                    &lt;fieldset</span> <span class="jeshile">style</span>=<span class="portokalli">"width: 60%"</span><span class="blu">&gt;<br>
+
+                    &lt;legend&gt;</span>Form<span class="blu">&lt;/legend&gt;</span><br>
+
+                Name: <span class="blu">&lt;input </span><span class="jeshile">type</span>=<span class="portokalli">"text"</span> <span class="jeshile">autofocus</span>=<span class="portokalli">"autofocus"</span> <span class="jeshile">placeholder</span>=<span class="portokalli">"Your name"</span><span class="blu">>&lt;br>&lt;br></span><br>
+
+                Surname: <span class="blu">&lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"text"</span> <span class="jeshile">placeholder</span>=<span class="portokalli">"Your surname"</span><span class="blu">>&lt;br>&lt;br></span><br>
+
+                E-mail: <span class="blu">&lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"Email"</span> <span class="jeshile">placeholder</span>=<span class="portokalli">"Your email"</span><span class="blu">>&lt;br>&lt;br></span><br>
+
+                Phone: <span class="blu">&lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"Phone"</span> <span class="jeshile">placeholder</span>=<span class="portokalli">"Your Phone number"</span><span class="blu">>&lt;br>&lt;br></span><br>
+
+                Gender: &nbsp;Female <span class="blu">&lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"radio"</span> <span class="blu">></span>
+                Male <span class="blu">&lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"radio"</span> <span class="blu">>&lt;br>&lt;br></span>
+
+                Comments: <span class="blu">&lt;br&gt;<br>
+                    &lt;textarea&gt; &lt;/textarea&gt;&lt;br>&lt;br><br></span>
+
+                I am interested in:
+                <span class="blu">&lt;select</span> <span class="blu">&gt;<br>
+                    &lt;option</span> <span class="jeshile">value</span>=<span class="portokalli">"Html"</span><span class="blu">></span>HTML<span class="blu">&lt;/option&gt;<br>
+                    &lt;option</span> <span class="jeshile">value</span>=<span class="portokalli">"Css"</span><span class="blu">></span>CSS<span class="blu">&lt;/option&gt;<br>
+                    &lt;option</span> <span class="jeshile">value</span>=<span class="portokalli">"Other"</span><span class="blu">></span>Others<span class="blu">&lt;/option&gt;<br>
+                    &lt;/select> &lt;br> &lt;br> <br>
+
+                    &lt;input</span> <span class="jeshile">type</span>=<span class="portokalli">"submit"</span> <span class="jeshile">value</span>=<span class="portokalli">"Submit"</span> <span class="jeshile">style</span>=<span class="portokalli">"margin-left: 55px; width: 140px;"</span><span class="blu">&gt;<br>
+                    &lt;/fieldset&gt;<br>
+                    &lt;/form&gt;</span>
+
+            </p>
+
+
+
+
+            <h4>Result</h4>
+            <form action="" method="get" autocomplete="on">
+                <fieldset style="width: 60%">
+                    <legend>Form</legend>
+                    Name: <input type="text" placeholder="Your name"><br><br>
+                    Surname: <input type="text" placeholder="Your surname"><br><br>
+                    E-mail: <input class="input-color2" type="Email" placeholder="Your email"><br><br>
+                    Phone: <input class="input-color2" type="Phone" placeholder="Your Phone number"><br><br>
+                    Gender: &nbsp;Female <input type="radio">
+                    Male <input type="radio"><br><br>
+                    Comments: <br>
+                    <textarea> </textarea><br><br>
+                    I am interested in:
+                    <select>
+                        <option value="Html">HTML</option>
+                        <option value="Css">CSS</option>
+                        <option value="Other">Others</option>
+                    </select><br><br><br>
+                    <input type="button" value="Submit" style="margin-left: 55px; width: 140px;">
+                </fieldset>
+            </form><br><br>
+            <div>
+                <a href="#" class="previous round" id="ba" onclick="leksionet(4);">&#8249;</a>
+                <a class="next round" id="ba" onclick="leksionet(2)">&#8250;</a></div>
+        </div>
+
+    </div>
+    <script>
+        initComparisons();
+        //mbyll oren kur klikon ne dritare
+
+    </script>
+
+</body>
+
+</html>

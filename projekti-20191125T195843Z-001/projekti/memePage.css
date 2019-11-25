@@ -1,0 +1,271 @@
+* {
+    font-family: 'Karla', serif;
+}
+.faqe3{
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    background-size: cover;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+   
+}
+*{
+    user-select: none;
+}
+.log {
+    width: 33%;
+    height: 33%;
+    margin-left: 30%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 18.3%;
+    position: fixed;
+    z-index:10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 0.5em;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.8vw;
+    color: white;
+    display: block;
+}
+
+.sidenav a.sublink {
+    padding-left: 20%;
+    font-size: 1.4vw;
+}
+.sidenav a.sublink:hover{
+    color: darkgoldenrod;
+}
+.sidenav a.about:hover {
+    color: white;
+}
+.sidenav a.about{
+    font-size: 2vw;
+}
+
+
+.buton{
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+    border: 0;
+   background: linear-gradient(to left, #003d29 40%, #4c9e48 150%);
+}
+.buton:hover{
+    -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
+
+}
+@keyframes pulse_animation {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.03);
+    }
+
+    30% {
+        transform: scale(1.05);
+    }
+
+    40% {
+        transform: scale(1.07);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    60% {
+        transform: scale(1.07);
+    }
+
+    70% {
+        transform: scale(1.05);
+    }
+
+    80% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.div2 {
+    object-position: bottom;
+    margin-top: 33%;
+    margin-left: 15%;
+  
+}
+
+
+.shigjeta {
+    animation-name: pulse_animation;
+    animation-duration: 1000ms;
+    transform-origin: 70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 20%;
+    height: 30%;
+    width: 30%;
+}
+p{
+    margin: 0%;
+    font-size: 2vw;
+    color: white;
+}
+* {box-sizing:border-box}
+/*futeri*/
+footer{
+    font-size: 1.4vw;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
+    margin-top: 0%;
+     margin-left: 17.8%;
+    color: dimgray;
+	background-color: rgba(0, 0, 0, 0.95);
+	height: 8%;
+	width: 82.7%;
+    float: left;
+    }
+/* Slideshowr */
+.slideshow-container {
+  max-width: 45%;
+  position: relative;
+   margin-left: 20%; 
+   float: left;
+    min-width: 40%;
+    margin-top: 1.3%;
+
+    
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous  */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* pozicioni i next */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*numri i fotos */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#memetitull{
+    margin-left: 20%;
+    color: white;
+    position: relative;
+    width: 50%;
+    float: left;
+    font-size: 2vw;
+    
+}
+#tutorialtitull{
+    font-size: 2vw;
+   color: white;
+    display: inline-block;
+    float: right;
+    margin-right: 12.2%;
+    
+}
+.vije{
+    color: rgba(255,255,255,0.7);
+    
+}
+.tutorial{
+    float: right;
+    width: 45%;
+    margin-top: 2%;
+    margin-right: 0.5%;
+    padding: 2%;
+   
+} 
+.blu{color: blue;}
+.roz{color: #4c0080;}
+.portokalli{color: #ff9933;}
+.jeshile{ color: #00ff55;}
+
+.tutorialet{
+    float: right;
+    width: 33%;
+    margin-right: 0.5%;
+    margin-top: 0%;
+    
+}
+#javas{
+   margin-left: 19%;
+   padding: 3%;
+    padding-left: 1%;
+    padding-right: 0%;
+    float: left;
+    width: 46%;
+    font-size: 2vw;
+    
+}

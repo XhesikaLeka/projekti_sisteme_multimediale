@@ -1,0 +1,63 @@
+#survey {
+
+    color: #e6b800;
+    display: block;
+    margin: auto;
+    width: 38%;
+    height: 75%;
+    border: solid 1px azure;
+    border-radius: 30px;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.1vw;
+    
+}
+* {
+    font-family: 'Karla', serif;
+}
+
+#survey-content {
+    width: 40%;
+    margin: auto;
+    padding-left: 20px;
+
+
+}
+.input-color {
+    background-color: #2d862d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+}
+
+.input-color2:hover {
+    background-color: lightgrey;
+   
+}
+.input-color2{
+     border-radius: 5px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color:  white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.imgcontainer {
+ 
+  margin: 1px 0 1px 0;
+  position: relative;
+}

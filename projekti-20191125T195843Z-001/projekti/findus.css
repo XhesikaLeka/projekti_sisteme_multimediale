@@ -1,0 +1,65 @@
+body{
+   background: url(bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    overflow-x: hidden;
+}
+* {
+    font-family: 'Karla', serif;
+}
+
+#mapid{
+  
+    width:46vw;
+    height: 35vw;
+    margin-top: 25px;
+    margin-left: 30px;
+ 
+}
+
+.titulli{
+    font-size: 5vw;
+    z-index: 10;
+    margin-left: 33vw;
+    padding: 0px;
+    
+}
+
+.psh{
+    padding: 15px;
+}
+.pershkrimi{
+    width: 40vw;
+    float: right;
+    font-size: 2vw;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    margin-top: 10%;
+    margin-right: 30px;
+}
+.logo{
+    width: 6.4vw;
+    height: 6.4vw;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.bardhe{
+    color: white;
+}
+ footer{
+    font-size: 120%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
+    margin-top: 8%;
+     margin-left: -1%;
+     margin-bottom: 0%;
+    color: dimgray;
+	background-color: rgba(0, 0, 0, 0.95);
+	height: 8%;
+	width: 102%;
+    float: left;
+    }

@@ -1,0 +1,394 @@
+.fq3 {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url("bgfq3.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+* {
+    font-family: 'Karla', serif;
+}
+
+.log {
+    width: 33%;
+    height: 33%;
+    margin-left: 30%;
+}
+#futer {
+    font-size: 1vw;
+    color: lightgray;
+
+
+}
+
+.pozfuter {
+    object-position: bottom;
+    margin-top:57%;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.menu {
+    height: 100%;
+    width: 18.3%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.buton {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    border: 0px;
+    background: linear-gradient(to left, #003d29 50%, #4c9e48 150%);
+}
+
+.buton:hover {
+    -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    display: block;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .menu {
+        padding-top: 15px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+}
+::selection {
+  color: white;
+  background: #cc99ff;
+}
+
+
+
+.main {
+    margin-left: 18.3%;
+    padding: 0px 10px;
+    margin-right: 0px;
+    font-size: 2vw;
+}
+
+div div.main:not(:first-child) {
+    display: none;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.portokalli {
+    color: orangered;
+}
+
+.blu {
+    color: blue;
+}
+
+.jeshile {
+    color: green;
+}
+
+.kuqe {
+    color: red;
+}
+
+.bardh {
+    color: white;
+}
+
+.roz {
+    color: deeppink;
+}
+
+.gri {
+    color: grey;
+}
+.gria{
+	color: rgba(0,0,0,0.3);
+}
+
+h3 {
+    text-decoration-line: underline;
+}
+
+.vija {
+    opacity: 0;
+}
+
+
+#kuriozitete1,
+#kuriozitete2,
+#kuriozitete3,
+#kuriozitete4,
+#kuriozitete5 {
+    width: 150px;
+    height: 150px;
+    padding: 16px 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+
+}
+
+/*kurioziteti*/
+#kurioz1,
+#kurioz2,
+#kurioz3,
+#kurioz4,
+#kurioz5 {
+    position: fixed;
+    height: 130px;
+    background-color: #003d29;
+    /*background: linear-gradient(to right, green 40%, #c2f00f 100%);*/
+    z-index: 50;
+    bottom: 23px;
+    right: 160px;
+    width: 0;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 1s;
+
+
+}
+
+/**/
+#k1,
+#k2,
+#k3,
+#k4,
+#k5 {
+    color: white;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 0%;
+    width: 100%;
+    visibility: hidden;
+    transition-delay: .4s;
+
+}
+
+#close1,
+#close2,
+#close3,
+#close4,
+#close5 {
+    padding: 2px 7px;
+    border-radius: 50%;
+    color: red;
+    visibility: hidden;
+    transition-delay: .4s;
+    font-size: 30%;
+    font-weight: bold;
+    z-index: 100;
+    text-align: right;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+
+
+#ba {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#ba:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    margin-left: 37%;
+    background-color: #4c9e48;
+    color: black;
+    cursor: pointer;
+}
+
+.next {
+    background-color: #003d29;
+    color: white;
+    margin-left: 200px;
+    cursor: pointer;
+
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.exp {
+    background-color: #d9f2d9;
+}
+
+.clock, .info{
+  width: 45%;
+    height: 45%;  
+    cursor: pointer;
+}
+.icons{
+   position:fixed;
+    z-index: 200;
+   margin: 1% auto 15% auto;
+    margin-right: 0.5%;
+    margin-left: 68%;
+}
+/*forma per pyetjet dhe ora*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+ /* z-index: 200;  Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+      border-radius: 7%;
+    background-color: rgb(241, 241, 241);
+    color: black;
+    margin: 5% auto 15% auto;
+    margin-right: 10%;
+    border: 3px solid;
+    border-color: #27A2BA;
+    width: 20%;
+   
+
+
+}
+.modal-content2 {
+  border-radius: 10px;
+  background-color: rgb(241, 241, 241);
+color: black;
+  margin: 0% auto 15% auto; 
+  margin-right: 15%;
+  border: 3px solid;
+  border-color: #27A2BA;
+  
+  width: 18%;
+ padding:1% ;
+
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+    }}
+    
+.contain {
+  position: relative;
+  width: 50%;
+float: right;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text{
+     width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.contain:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+#shformat {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+#h1format {
+  text-align: center;
+  text-transform: uppercase;
+  color: #944dff;
+}
+
+#pformat {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+#pformat2 {
+   font-style: italic;
+  font-family: fantasy;
+  font-size: 20px;
+  font-weight: bold;
+}
+.divformat {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}

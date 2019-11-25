@@ -1,0 +1,101 @@
+
+html {
+  box-sizing: border-box;
+  background: url(bg.png); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+  overflow-x: hidden;
+     
+}
+* {
+    font-family: 'Karla', serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-bottom: 0%;
+  padding: 3% 3%;
+  margin-left: 6%;
+   
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+background-color: white;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+.container {
+  padding: 2px 16px;
+}
+.ico{
+    z-index: 5;
+    float: left;
+    margin-top: 20%;
+    position: absolute;
+   
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+margin-bottom: 7%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.emriIfaqes{
+    margin-left: 38%;
+    font-size: 5vw;
+   
+    color: white;
+    
+}
+ footer{
+    font-size: 120%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
+    margin-top: 8%;
+     margin-left: -1%;
+     margin-bottom: 0%;
+    color: dimgray;
+	background-color: rgba(0, 0, 0, 0.95);
+	height: 8%;
+	width: 102%;
+    float: left;
+    }
